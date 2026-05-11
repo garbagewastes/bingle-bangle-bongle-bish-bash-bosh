@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.37111.16 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bing", "Bing.csproj", "{3B81CE74-8509-47BB-92EB-FA43A3D3BB4E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chinesebing", "chinesebing.csproj", "{D3A2A8F0-67DB-45F7-BDDB-D794FBE2C940}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3B81CE74-8509-47BB-92EB-FA43A3D3BB4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B81CE74-8509-47BB-92EB-FA43A3D3BB4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B81CE74-8509-47BB-92EB-FA43A3D3BB4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B81CE74-8509-47BB-92EB-FA43A3D3BB4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3A2A8F0-67DB-45F7-BDDB-D794FBE2C940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A2A8F0-67DB-45F7-BDDB-D794FBE2C940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A2A8F0-67DB-45F7-BDDB-D794FBE2C940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A2A8F0-67DB-45F7-BDDB-D794FBE2C940}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EE41F199-2444-4D5B-B8CE-A61F3B237F7F}
+		SolutionGuid = {A8E0B366-9CDA-4677-9B97-23234F945570}
 	EndGlobalSection
 EndGlobal
