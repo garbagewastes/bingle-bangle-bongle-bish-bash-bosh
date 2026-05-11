@@ -1,4 +1,7 @@
-﻿namespace chinesebing
+﻿using static System.Console;
+using static System.Math;
+
+namespace chinesebing
 {
     internal class Program
     {
@@ -9,7 +12,65 @@
             // tamzin code
 
             // james code
+            static void square()
+            {
+                CursorVisible = false;
+                int bottomRow = WindowHeight - 1, farRow = WindowWidth - 1, x = 0, y = bottomRow - 1;
+                bool go = true;
 
+                SetCursorPosition(x, y);
+                Write(new string('\u25A0', 5));
+                while (go == true)
+                {
+                    bottomRow = WindowHeight - 1;
+                    farRow = WindowWidth - 1;
+                    x = Clamp(x, 0, farRow);
+                    y = Clamp(y, 0, bottomRow - 1);
+
+
+                    if (KeyAvailable)
+                    {
+                        bool moved = false;
+                        var key = ReadKey(true).Key;
+
+
+                        if ((key == ConsoleKey.RightArrow) && x < farRow)
+                        {
+                            x++;
+                            moved = true;
+                        }
+                        else if ((key == ConsoleKey.LeftArrow) && (x > 0))
+                        {
+                            x--;
+                            moved = true;
+                        }
+                        else if ((key == ConsoleKey.UpArrow) && (y > 0))
+                        {
+                            y--;
+                            moved = true;
+                        }
+                        else if (key == ConsoleKey.DownArrow && (y < bottomRow - 1))
+                        {
+                            y++;
+                            moved = true;
+                        }
+
+                        if (moved)
+                        {
+                            Clear();
+                            SetCursorPosition(x, y);
+                            Write(new string('\u25A0', 5));
+                        }
+
+                        if (key == ConsoleKey.Escape)
+                        {
+                            go = false;
+                        }
+                    }
+                }
+            }
+
+            square();
             // quinn code
 
             int horseDistance = 0, playerDistance = 0, round = 0, roundDistance;
