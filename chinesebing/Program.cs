@@ -41,7 +41,7 @@ namespace chinesebing
                 bool go = true;
 
                 SetCursorPosition(x, y);
-                Write(new string('\u25A0', 5));
+                Write(new string('\u25A0', 1));
                 while (go == true)
                 {
                     bottomRow = WindowHeight - 1;
@@ -81,7 +81,7 @@ namespace chinesebing
                         {
                             Clear();
                             SetCursorPosition(x, y);
-                            Write(new string('\u25A0', 5));
+                            Write(new string('\u25A0', 1));
                         }
 
                         if (key == ConsoleKey.Escape)
