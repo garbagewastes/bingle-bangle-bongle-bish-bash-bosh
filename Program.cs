@@ -4,13 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("hey man");
+
+            // tamzin code
+
+            // james code
+
+            // quinn code
         }
     }
 }
-
-// tamzin code
-
-// james code
-
-//quinn code
