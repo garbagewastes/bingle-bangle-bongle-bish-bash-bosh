@@ -1,4 +1,6 @@
-﻿namespace chinesebing
+﻿using System.Text;
+
+namespace chinesebing
 {
     internal class Program
     {
@@ -7,7 +9,27 @@
             Console.WriteLine("Horsie");
 
             // tamzin code
+            Console.OutputEncoding = Encoding.UTF8;
 
+            const double AUS = 0.8085, US = 0.8272, POUND = 0.5457, YEN = 76.23, EURO = 0.6297;
+            string temp;
+            double NZD, AusFinal, UsFinal, PoundFinal, YenFinal, EuroFinal;
+
+            Console.WriteLine("Give an amount of NZD");
+            temp = Console.ReadLine();
+            NZD = Convert.ToDouble(temp);
+            AusFinal = NZD * AUS;
+            UsFinal = NZD * US;
+            PoundFinal = NZD * POUND;
+            YenFinal = NZD * YEN;
+            EuroFinal = NZD * EURO;
+            Console.WriteLine($"{AusFinal:C} AUS");
+            Console.WriteLine($"{UsFinal:C} US");
+            Console.WriteLine($"£{PoundFinal:F2}");
+            Console.WriteLine($"¥{YenFinal:F2}");
+            Console.WriteLine($"€{EuroFinal:F2}");
+            Console.ReadLine();
+            
             // james code
 
             // quinn code
